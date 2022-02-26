@@ -399,14 +399,67 @@
     </div>
 </footer>
 
+<!-- =========================== MODAL WINDOW ========================= -->
 
 <div class="backdrop is.hidden" data-modal>
     <div class="modal">
             <button type="button" class="close-btn" data-modal-close>
             <svg>
-                <use href="./images/sprite.svg#icon-modal-close-button"></use>
+                <use href="./images/sprite.svg#icon-close"></use>
             </svg>    
             </button>
+
+<!-- +++++++++++++++++++++++ FORMULARZ ++++++++++++++++++++++++++++++ -->
+<section class="form-section">
+    <div class="form-area">
+        <h3 class="form-header">Zostaw swoje dane w formularzu poniżej</h3>
+
+        <form class="form" autocomplete="off" action="javascript:void(0);" method="POST">
+
+            <label class="form-label">
+                <span class="label-span">Imię</span>
+                <input class="form-input" type="text" name="name"/>
+                    <svg class="form-icon icon-name">
+                        <use href="./images/sprite.svg#icon-name"></use>
+                    </svg>
+            </label>
+
+            <label class="form-label">
+                <span class="label-span">Telefon</span>
+                <input class="form-input" type="tel" name="tel"/>
+                    <svg class="form-icon icon-tel">
+                        <use href="./images/sprite.svg#icon-tel"></use>
+                    </svg>
+            </label>
+            
+            <label class="form-label">
+                <span class="label-span">E-mail</span>
+                <input class="form-input icon-mail" type="email" name="email"/>
+                    <svg class="form-icon icon-mail">
+                        <use href="./images/sprite.svg#icon-mail"></use>
+                    </svg>
+            </label>
+
+            <label class="form-label">
+                <span class="label-span">Komentarz</span>
+                <textarea class="comment-textarea" type="comment" name="comment"  placeholder="Wprowadź tekst"></textarea>
+            </label>
+
+        
+            <button class="submit-button" type="submit">wyślij</button>
+        
+        </form>
+    </div>
+</section>
+
+
+
+<!-- +++++++++++++++++++++++ END FORMULARZ ++++++++++++++++++++++++++++++ -->
+
+
+
+
+
     </div>
 </div>
 
