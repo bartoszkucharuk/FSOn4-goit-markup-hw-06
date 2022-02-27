@@ -431,7 +431,7 @@
 
         <label class="form-label">
             <span class="label-span">Imię</span>
-            <input class="form-input" type="text" name="name"/>
+            <input class="form-input" type="text" name="name" required minlenght="2"/>
                 <svg class="form-icon icon-name">
                     <use href="./images/sprite.svg#icon-name"></use>
                 </svg>
@@ -439,7 +439,7 @@
 
         <label class="form-label">
             <span class="label-span">Telefon</span>
-            <input class="form-input" type="tel" name="tel"/>
+            <input class="form-input" type="tel" name="tel"  required/>
                 <svg class="form-icon icon-tel">
                     <use href="./images/sprite.svg#icon-tel"></use>
                 </svg>
@@ -447,7 +447,7 @@
         
         <label class="form-label">
             <span class="label-span">E-mail</span>
-            <input class="form-input icon-mail" type="email" name="email"/>
+            <input class="form-input icon-mail" type="email" name="email" required/>
                 <svg class="form-icon icon-mail">
                     <use href="./images/sprite.svg#icon-mail"></use>
                 </svg>
@@ -458,11 +458,20 @@
             <textarea class="comment-textarea" type="comment" name="comment"  placeholder="Wprowadź tekst"></textarea>
         </label>
 
+    <div class="checkbox-wrap">
         <label>
+
+        <svg class="checkbox-box">
+        </svg>
+
+        <svg class="checkbox-icon"><use href="./images/sprite.svg#icon-checked"></use>
+        </svg>
+    
+
         <input type="checkbox" class="checkbox" unchecked name="terms_and_conditions" value="terms_and_conditions"/>
         <p class=checkbox-text>Oświadczam, iż akceptuję <a class="form-link link" target="_blank" href="#">Regulamin</a> i <a class="form-link link" target="_blank" href="#">Politykę Prywatności.</a></p>
         </label>
-
+    </div>
        
         <button class="submit-button" type="submit">wyślij</button>
     
