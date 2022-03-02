@@ -143,10 +143,25 @@ img {display: block;
     border-radius: 2px;
 }
 
+.nav-list-item.active::after {
+  color: var(--secondary-color);
+  background: var(--secondary-color);
+  width: 100%;
+}
+
+
+.nav-list-item.active::after {
+  color: red;
+  background: red;
+  width: 100%;
+}
+
+
 .nav-list-item:hover::after {
     width: 100%;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 
 
 .nav-list-item-link {
@@ -385,47 +400,20 @@ visibility:hidden;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-!
-!
-!
-!
-!
-!
-!
-!
-!
-!
-!
-!
 .checkbox:checked + .checkbox-text::before {
     background-color: var(--secondary-color);
-    background-image: url(..images/icon-checked.svg);
+    background-image: url(../images/icon-checked.svg);
     fill: red;
     background-size: 11px 8px;
     background-position: center;
     background-repeat: no-repeat;
     border: none;
 }
-!
-!
-!
-!
-!
-!
-!
-!
-!
-!
-!
-!
-!
-
 
 .form-link {
     color: var(--secondary-color);
     text-decoration: underline;
 }
-
 
 .submit-button {
     display: block;
@@ -688,7 +676,8 @@ visibility:hidden;
     fill: white;
 }
 
-.social-links-list-item:hover .social-links-icon {
+.social-links-list-item:hover .social-links-icon, 
+.social-links-list-item:focus .social-links-icon {
     fill: white;
 }
 
