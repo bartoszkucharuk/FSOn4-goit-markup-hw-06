@@ -151,8 +151,8 @@ img {display: block;
 
 
 .nav-list-item.active::after {
-  color: red;
-  background: red;
+  color: var(--second-color):
+  background: var(--second-color);
   width: 100%;
 }
 
@@ -403,7 +403,7 @@ visibility:hidden;
 .checkbox:checked + .checkbox-text::before {
     background-color: var(--secondary-color);
     background-image: url(../images/icon-checked.svg);
-    fill: red;
+    fill: var(--secondary-color);
     background-size: 11px 8px;
     background-position: center;
     background-repeat: no-repeat;
@@ -431,8 +431,6 @@ visibility:hidden;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
 }
-
-
 
 
 /* +++++++++++++++++++++++ END FORMULARZ ++++++++++++++++++++++++++++++ */
@@ -726,11 +724,11 @@ visibility:hidden;
     border-radius: 4px;
 }
 
-.our-clients-list-link:not(:last-child) {
+.our-clients-list-link-item:not(:last-child) {
 margin-right: 30px;
 }
 
-.our-clients-list-link-item:hover ,
+.our-clients-list-link-item:hover,
 .our-clients-list-link-item:focus {
     border-color: var(--secondary-color);
     fill: var(--secondary-color);
